@@ -46,7 +46,7 @@ function App() {
   }
 
   async function getScryFallURL(title: string) {
-    const scryfallURL = await invoke<string>("get_scryfall_url", { name: title });
+    const scryfallURL = await invoke<string>("get_card_image", { name: title });
     return scryfallURL;
     // console.log(scryfallURL);
     // setCard({ title, url: scryfallURL });
